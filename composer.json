@@ -1,0 +1,50 @@
+{
+    "name": "laymont/postgres-multi-tenant",
+    "description": "Laravel package for Postgres schema-per-tenant multi-tenancy",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Laymont Arratia",
+            "email": "laymont@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0|^13.0",
+        "illuminate/database": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0|^11.0",
+        "pestphp/pest": "^3.0",
+        "phpunit/phpunit": "^11.0",
+        "mockery/mockery": "^1.6",
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laymont\\PostgresMultiTenant\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laymont\\PostgresMultiTenant\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laymont\\PostgresMultiTenant\\Providers\\PostgresMultiTenantServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

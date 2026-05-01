@@ -1,0 +1,19 @@
+/vendor/
+/.env.testing
+.phpunit.result.cache
+
+# IDEs
+/.idea/
+/.vscode/
+*.iml
+
+# OS
+.DS_Store
+
+# Coverage / build artefacts
+/coverage/
+/.phpunit.cache/
+
+# Test / tooling caches
+/.pest.cache/
+/.php-cs-fixer.cache
